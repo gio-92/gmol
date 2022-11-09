@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap");
+
+$font1: "Ubuntu", sans-serif;
+
+$color1: #00245d;
+$color2: #faa633;
+$color3: #61ac31;
+$color_white: #fff;
+$color_black: #000;
+
+body {
+  background-color: $color_white;
+  color: $color_black;
+  font-style: normal;
+  font-family: $font1;
+  font-weight: 400;
+  nav {
+    .logo {
+      width: 200px;
+      padding: 20px 0;
+    }
+  }
+  main {
+    padding: 34px 0;
+    background-color: $color1;
+    color: $color_white;
+    h1 {
+      font-weight: 700;
+      font-size: 32px;
+      line-height: 37px;
+      text-align: center;
+    }
+    p {
+      font-size: 16px;
+      line-height: 24px;
+      text-align: center;
+    }
+    .lead {
+      .img-lead-container {
+        align-items: center;
+        justify-content: center;
+        display: flex;
+      }
+      h2 {
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 28px;
+      }
+      .form-box {
+        padding: 30px;
+        background: $color_white;
+        color: $color_black;
+        box-shadow: 0px 12px 12px 12px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+        label {
+          font-weight: 700;
+          font-size: 16px;
+          line-height: 18px;
+        }
+        .form-check-label {
+          font-weight: 400;
+          display: inline;
+          font-size: 14px;
+          line-height: 16px;
+          color: rgba(0, 0, 0, 0.86);
+        }
+        .check {
+          margin-top: 10px;
+          input#check1,
+          input#check2 {
+            margin-right: 10px;
+            width: 25px;
+            height: 25px;
+            border: 1px solid #9b9b9b;
+            border-radius: 4px;
+          }
+          .form-check-input:checked {
+            background-color: $color3;
+            border-color: $color3;
+          }
+        }
+        .info {
+          display: none;
+          font-size: 16px;
+          line-height: 18px;
+          color: #ea0f0f;
+          text-align: left;
+          margin: 0;
+        }
+        .error {
+          border: 2px solid #ea0f0f !important;
+        }
+
+        button.cta {
+          width: 100%;
+          text-align: center;
+          margin-top: 15px;
+          background-color: $color3;
+          color: $color_white;
+          padding: 10px 0;
+          font-weight: 700;
+          font-size: 20px;
+          line-height: 23px;
+          border: 0;
+          border-radius: 8px;
+        }
+      }
+    }
+    .thank-you-page {
+      h2 {
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 41px;
+      }
+      p {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+      }
+      ul {
+        list-style: none;
+        li {
+          font-size: 16px;
+          line-height: 24px;
+          strong {
+            font-weight: 700;
+          }
+        }
+      }
+    }
+  }
+  footer {
+    padding: 40px 0;
+    font-size: 14px;
+    line-height: 16px;
+  }
+}
+
+
+/********************* Media Query for Mobile *********************/
+
+@media (min-width: 768px) { 
+  body {
+    main {
+      p {
+        font-size: 18px;
+        line-height: 27px;
+      }
+      }
+    }
+ }
